@@ -11,6 +11,7 @@ Date finished:
 */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main(){
 	char option;
@@ -36,7 +37,7 @@ int main(){
 			
 			/* ==== validates the chosen menu option and prints an error message if invalid ====*/
 			if(toupper(option) != 'D' && toupper(option) != 'W' && toupper(option) != 'M' && toupper(option) != 'Y' && toupper(option) != 'Q') {
-				printf("\n\nInvalid option, please refer to the menu above.\n\n\n");
+				printf("\n\nInvalid option. Please check the provided options above.\n\n\n");
 			}
 			
 			/* ====  ==== */
@@ -61,8 +62,8 @@ int main(){
 			while (1) {
 	  			printf("Enter an integer: ");
 	  			// Scan for an integer
-	  			scanf("%d", &period&);
-	  			if (scanf("%d", &period) == 1 && scanf("%d", &period)  0) {
+	  			scanf("%d", &period);
+	  			if (scanf("%d", &period) == 1) {
 	    			// Input is valid, break the loop
 	    			break;
 	  			}
