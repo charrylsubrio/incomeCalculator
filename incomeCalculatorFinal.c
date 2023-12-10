@@ -200,7 +200,7 @@ void displayTotAvg(int period, float totIncome, char *whatPeriod1, char *whatPer
 	printf("\n***** RESULTS *****\n");
 	printf("\n* TOTAL INCOME WITHIN %d %sS: %.2f\n", period, whatPeriod2, totIncome);
 	printf("* AVERAGE %sLY INCOME:        %.2f\n\n\n", whatPeriod1, avgIncome);
-	printf("------------------------------------------------\n");
+	printf("-------------------------------------------\n");
 	printf("Press any key to proceed to main menu ... ");
 	getch();
 	system("cls");
